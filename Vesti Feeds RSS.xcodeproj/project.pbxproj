@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E0925B52548329C00460215 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0925B42548329C00460215 /* AppDelegate.swift */; };
+		2E0925B72548329C00460215 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0925B62548329C00460215 /* SceneDelegate.swift */; };
+		2E0925B92548329C00460215 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0925B82548329C00460215 /* ViewController.swift */; };
+		2E0925BE2548329F00460215 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E0925BD2548329F00460215 /* Assets.xcassets */; };
+		2E0925C12548329F00460215 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E0925BF2548329F00460215 /* LaunchScreen.storyboard */; };
+		2E0925E6254833EC00460215 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0925E5254833EC00460215 /* NetworkService.swift */; };
+		2E0925E825483B5C00460215 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0925E725483B5C00460215 /* FeedCell.swift */; };
+		2E0925EA25483CED00460215 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0925E925483CED00460215 /* DetailController.swift */; };
+		2E0925EC2548512A00460215 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0925EB2548512A00460215 /* ViewModel.swift */; };
+		2E0925EE25485B5B00460215 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0925ED25485B5B00460215 /* API.swift */; };
+		2E0925F0254860E000460215 /* FeedParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0925EF254860E000460215 /* FeedParser.swift */; };
+		2E0925F52548611000460215 /* RSSItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0925F42548611000460215 /* RSSItem.swift */; };
+		2E0925FA254875A700460215 /* WebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0925F9254875A700460215 /* WebImageView.swift */; };
+		2E0925FC2548813000460215 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0925FB2548813000460215 /* DetailView.swift */; };
+		2E0925FE254884CB00460215 /* Extension String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0925FD254884CB00460215 /* Extension String.swift */; };
+		2E09260025488AB900460215 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0925FF25488AB900460215 /* TextView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E0925C82548329F00460215 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E0925A92548329C00460215 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E0925B02548329C00460215;
+			remoteInfo = "Vesti Feeds RSS";
+		};
+		2E0925D32548329F00460215 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E0925A92548329C00460215 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E0925B02548329C00460215;
+			remoteInfo = "Vesti Feeds RSS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E0925B12548329C00460215 /* Vesti Feeds RSS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vesti Feeds RSS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E0925B42548329C00460215 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E0925B62548329C00460215 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2E0925B82548329C00460215 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2E0925BD2548329F00460215 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E0925C02548329F00460215 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E0925C22548329F00460215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E0925C72548329F00460215 /* Vesti Feeds RSSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vesti Feeds RSSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E0925D22548329F00460215 /* Vesti Feeds RSSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vesti Feeds RSSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E0925E5254833EC00460215 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		2E0925E725483B5C00460215 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		2E0925E925483CED00460215 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		2E0925EB2548512A00460215 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		2E0925ED25485B5B00460215 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		2E0925EF254860E000460215 /* FeedParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedParser.swift; sourceTree = "<group>"; };
+		2E0925F42548611000460215 /* RSSItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSItem.swift; sourceTree = "<group>"; };
+		2E0925F9254875A700460215 /* WebImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImageView.swift; sourceTree = "<group>"; };
+		2E0925FB2548813000460215 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		2E0925FD254884CB00460215 /* Extension String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension String.swift"; sourceTree = "<group>"; };
+		2E0925FF25488AB900460215 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E0925AE2548329C00460215 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E0925C42548329F00460215 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E0925CF2548329F00460215 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E0925A82548329C00460215 = {
+			isa = PBXGroup;
+			children = (
+				2E0925B32548329C00460215 /* Vesti Feeds RSS */,
+				2E0925B22548329C00460215 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E0925B22548329C00460215 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E0925B12548329C00460215 /* Vesti Feeds RSS.app */,
+				2E0925C72548329F00460215 /* Vesti Feeds RSSTests.xctest */,
+				2E0925D22548329F00460215 /* Vesti Feeds RSSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E0925B32548329C00460215 /* Vesti Feeds RSS */ = {
+			isa = PBXGroup;
+			children = (
+				2E0925B42548329C00460215 /* AppDelegate.swift */,
+				2E0925B62548329C00460215 /* SceneDelegate.swift */,
+				2E0925F32548610400460215 /* Model */,
+				2E0925F62548612800460215 /* ViewModel */,
+				2E0925F72548613800460215 /* Controller */,
+				2E0925F82548614400460215 /* Cells */,
+				2E116C5E25493EBA00087DAF /* View */,
+				2E0925E4254833D000460215 /* Service */,
+				2E116C5D25493E6500087DAF /* Extensions */,
+				2E0925BD2548329F00460215 /* Assets.xcassets */,
+				2E0925BF2548329F00460215 /* LaunchScreen.storyboard */,
+				2E0925C22548329F00460215 /* Info.plist */,
+			);
+			path = "Vesti Feeds RSS";
+			sourceTree = "<group>";
+		};
+		2E0925E4254833D000460215 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2E0925E5254833EC00460215 /* NetworkService.swift */,
+				2E0925ED25485B5B00460215 /* API.swift */,
+				2E0925EF254860E000460215 /* FeedParser.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2E0925F32548610400460215 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E0925F42548611000460215 /* RSSItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2E0925F62548612800460215 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2E0925EB2548512A00460215 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2E0925F72548613800460215 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2E0925B82548329C00460215 /* ViewController.swift */,
+				2E0925E925483CED00460215 /* DetailController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2E0925F82548614400460215 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2E0925E725483B5C00460215 /* FeedCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2E116C5D25493E6500087DAF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2E0925F9254875A700460215 /* WebImageView.swift */,
+				2E0925FF25488AB900460215 /* TextView.swift */,
+				2E0925FD254884CB00460215 /* Extension String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2E116C5E25493EBA00087DAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2E0925FB2548813000460215 /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E0925B02548329C00460215 /* Vesti Feeds RSS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E0925DB2548329F00460215 /* Build configuration list for PBXNativeTarget "Vesti Feeds RSS" */;
+			buildPhases = (
+				2E0925AD2548329C00460215 /* Sources */,
+				2E0925AE2548329C00460215 /* Frameworks */,
+				2E0925AF2548329C00460215 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vesti Feeds RSS";
+			productName = "Vesti Feeds RSS";
+			productReference = 2E0925B12548329C00460215 /* Vesti Feeds RSS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E0925C62548329F00460215 /* Vesti Feeds RSSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E0925DE2548329F00460215 /* Build configuration list for PBXNativeTarget "Vesti Feeds RSSTests" */;
+			buildPhases = (
+				2E0925C32548329F00460215 /* Sources */,
+				2E0925C42548329F00460215 /* Frameworks */,
+				2E0925C52548329F00460215 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E0925C92548329F00460215 /* PBXTargetDependency */,
+			);
+			name = "Vesti Feeds RSSTests";
+			productName = "Vesti Feeds RSSTests";
+			productReference = 2E0925C72548329F00460215 /* Vesti Feeds RSSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2E0925D12548329F00460215 /* Vesti Feeds RSSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E0925E12548329F00460215 /* Build configuration list for PBXNativeTarget "Vesti Feeds RSSUITests" */;
+			buildPhases = (
+				2E0925CE2548329F00460215 /* Sources */,
+				2E0925CF2548329F00460215 /* Frameworks */,
+				2E0925D02548329F00460215 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E0925D42548329F00460215 /* PBXTargetDependency */,
+			);
+			name = "Vesti Feeds RSSUITests";
+			productName = "Vesti Feeds RSSUITests";
+			productReference = 2E0925D22548329F00460215 /* Vesti Feeds RSSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E0925A92548329C00460215 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "Andrei Volkau";
+				TargetAttributes = {
+					2E0925B02548329C00460215 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					2E0925C62548329F00460215 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 2E0925B02548329C00460215;
+					};
+					2E0925D12548329F00460215 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 2E0925B02548329C00460215;
+					};
+				};
+			};
+			buildConfigurationList = 2E0925AC2548329C00460215 /* Build configuration list for PBXProject "Vesti Feeds RSS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E0925A82548329C00460215;
+			productRefGroup = 2E0925B22548329C00460215 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E0925B02548329C00460215 /* Vesti Feeds RSS */,
+				2E0925C62548329F00460215 /* Vesti Feeds RSSTests */,
+				2E0925D12548329F00460215 /* Vesti Feeds RSSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E0925AF2548329C00460215 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E0925C12548329F00460215 /* LaunchScreen.storyboard in Resources */,
+				2E0925BE2548329F00460215 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E0925C52548329F00460215 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E0925D02548329F00460215 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E0925AD2548329C00460215 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E0925B92548329C00460215 /* ViewController.swift in Sources */,
+				2E0925FC2548813000460215 /* DetailView.swift in Sources */,
+				2E0925E825483B5C00460215 /* FeedCell.swift in Sources */,
+				2E09260025488AB900460215 /* TextView.swift in Sources */,
+				2E0925B52548329C00460215 /* AppDelegate.swift in Sources */,
+				2E0925F0254860E000460215 /* FeedParser.swift in Sources */,
+				2E0925E6254833EC00460215 /* NetworkService.swift in Sources */,
+				2E0925FA254875A700460215 /* WebImageView.swift in Sources */,
+				2E0925EA25483CED00460215 /* DetailController.swift in Sources */,
+				2E0925B72548329C00460215 /* SceneDelegate.swift in Sources */,
+				2E0925FE254884CB00460215 /* Extension String.swift in Sources */,
+				2E0925EE25485B5B00460215 /* API.swift in Sources */,
+				2E0925F52548611000460215 /* RSSItem.swift in Sources */,
+				2E0925EC2548512A00460215 /* ViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E0925C32548329F00460215 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E0925CE2548329F00460215 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E0925C92548329F00460215 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E0925B02548329C00460215 /* Vesti Feeds RSS */;
+			targetProxy = 2E0925C82548329F00460215 /* PBXContainerItemProxy */;
+		};
+		2E0925D42548329F00460215 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E0925B02548329C00460215 /* Vesti Feeds RSS */;
+			targetProxy = 2E0925D32548329F00460215 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E0925BF2548329F00460215 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E0925C02548329F00460215 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E0925D92548329F00460215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2E0925DA2548329F00460215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E0925DC2548329F00460215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Vesti Feeds RSS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.volkau.Vesti-Feeds-RSS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E0925DD2548329F00460215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Vesti Feeds RSS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.volkau.Vesti-Feeds-RSS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2E0925DF2548329F00460215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Vesti Feeds RSSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.volkau.Vesti-Feeds-RSSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vesti Feeds RSS.app/Vesti Feeds RSS";
+			};
+			name = Debug;
+		};
+		2E0925E02548329F00460215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Vesti Feeds RSSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.volkau.Vesti-Feeds-RSSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vesti Feeds RSS.app/Vesti Feeds RSS";
+			};
+			name = Release;
+		};
+		2E0925E22548329F00460215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Vesti Feeds RSSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.volkau.Vesti-Feeds-RSSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Vesti Feeds RSS";
+			};
+			name = Debug;
+		};
+		2E0925E32548329F00460215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Vesti Feeds RSSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.volkau.Vesti-Feeds-RSSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Vesti Feeds RSS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E0925AC2548329C00460215 /* Build configuration list for PBXProject "Vesti Feeds RSS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E0925D92548329F00460215 /* Debug */,
+				2E0925DA2548329F00460215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E0925DB2548329F00460215 /* Build configuration list for PBXNativeTarget "Vesti Feeds RSS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E0925DC2548329F00460215 /* Debug */,
+				2E0925DD2548329F00460215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E0925DE2548329F00460215 /* Build configuration list for PBXNativeTarget "Vesti Feeds RSSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E0925DF2548329F00460215 /* Debug */,
+				2E0925E02548329F00460215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E0925E12548329F00460215 /* Build configuration list for PBXNativeTarget "Vesti Feeds RSSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E0925E22548329F00460215 /* Debug */,
+				2E0925E32548329F00460215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E0925A92548329C00460215 /* Project object */;
+}
